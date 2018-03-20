@@ -33,10 +33,10 @@ var uri = ["FPI9Rt1PIkY", "W282G4FiS9I", "0FLHal964uM", "Dx8VTOGhIXo", "J_EuWgOK
 var embed = [true, false, false, false, false, false, false, false, false, false, false, false];
 ```
 
-> Edit the origin to match the page or use ```window.location.href``` to dinamically get the URL of the page
+> Edit the origin to represent a fixed URL address or continue to use ```window.location.href``` to dinamically retrieve the URL of the page
 
 ```javascript
-var origin = "http://yt.maxfalstein.co.uk";
+var origin = var origin = window.location.href;
 ```
 
 > Edit the following if statement to disable autoplay and the optional origin for protecting HTTPS connections from malicious appending and inspection of data
