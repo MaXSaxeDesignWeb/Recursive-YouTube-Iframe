@@ -42,27 +42,27 @@ var origin = var origin = window.location.href;
 > Edit the following if statement to disable autoplay and the optional origin for protecting HTTPS connections from malicious appending and inspection of data
 
 ```javascript
-    if (embed[i] == true) {
-      curi = furi + "?autoplay=1&" + origin;
-    } else {
-      curi = furi + "?" + origin;
-    }
+  if (embed[i] == true) {
+    curi = furi + "?autoplay=1&" + origin;
+  } else {
+    curi = furi + "?" + origin;
+  }
 ```
 
 > Edit the width, height, frameborder, allow and allowFullScreen options with the following settings:
 
 ```javascript
   var iframe = document.createElement('iframe');
-	iframe.src = encodeURI(curi);
-	iframe.style.width = "560px";
-	iframe.style.height = "315px";
+  iframe.src = encodeURI(curi);
+  iframe.style.width = "560px";
+  iframe.style.height = "315px";
   iframe.frameborder = "0";
   iframe.allow ="autoplay; encrypted-media; allowfullscreen";
-	iframe.setAttribute('allowFullScreen', '')
+  iframe.setAttribute('allowFullScreen', '')
 ```
 
 > Edit "YTVids" to match the name of the &gt;main&lt;/&gt;article&lt;/&gt;section&lt;/&gt;div&lt; tag id
 
 ```javascript
-	document.getElementById("YTVids").appendChild(iframe);
+document.getElementById("YTVids").appendChild(iframe);
 ```
