@@ -9,6 +9,7 @@ var autoplayText = "?autoplay=1&";
 var questionMark = "?autoplay=0&";
 var ytEmbed = "https://www.youtube.com/embed/";
 iframe();
+var chunky = iframe.curi();
 function iframe() {
   var i;
   var curi, furi = "";
@@ -28,5 +29,8 @@ function iframe() {
     iframe.setAttribute('allowFullScreen', '')
     document.getElementById("YTVids").appendChild(iframe);
     console.log('iframe.contentWindow =', iframe.contentWindow);
+  }
+  function curi() {
+	return curi;
   }
 }
