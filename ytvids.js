@@ -28,9 +28,11 @@ function iframe() {
     iframe.setAttribute('allowFullScreen', '')
     document.getElementById("YTVids").appendChild(iframe);
     console.log('iframe.contentWindow =', iframe.contentWindow);
-		setTimeout(check, delay[i]);
+    sleep(delay[i]);
   }
 }
-function printCuri() {
-	console.log(curi);
+
+function sleep(miliseconds) {
+  var currentTime = new Date().getTime();
+  while (currentTime + miliseconds >= new Date().getTime()) {}
 }
